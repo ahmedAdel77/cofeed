@@ -1,0 +1,19 @@
+<div class="feeds">
+  <div class="feeds__header">
+    <h4 class="feeds__title">Feeds</h4>
+    <div class="feeds__nav">
+      <a routerLink="">All</a>
+      <a routerLink="">Following</a>
+      <a routerLink="">Newest</a>
+      <a routerLink="" class="active">Popular</a>
+    </div>
+  </div>
+  <div class="feeds__body">
+    <app-feed
+      *ngFor="let feed of feeds; let i = index"
+      [feed]="feed"
+      [index]="i"
+      class="feeds__item"
+    ></app-feed>
+  </div>
+</div>

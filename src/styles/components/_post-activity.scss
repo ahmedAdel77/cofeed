@@ -1,0 +1,61 @@
+.activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 30px;
+  height: 195px;
+  width: 300px;
+  max-width: 300px;
+  background-color: #f6faff;
+  border: 3px solid #fff;
+  border-radius: 30px;
+  box-shadow: -24px 24px 31px -19px rgb(235 237 247);
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__img {
+    background-color: rgb(195, 245, 179);
+    height: 90px;
+    width: 120px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+  }
+
+  &__title {
+    color: $text-color;
+    font-size: 15px;
+    width: 70px;
+  }
+
+  &__interactions {
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+    color: $inactive-color;
+  }
+
+  &__interaction {
+    display: flex;
+    justify-content: space-between;
+    width: 28px;
+
+    .interaction__icon {
+      cursor: pointer;
+    }
+  }
+
+  &__all {
+    color: $primary-color;
+    text-align: center;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+  }
+}

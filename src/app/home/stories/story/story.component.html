@@ -1,0 +1,10 @@
+<a class="story" routerLink="#">
+  <div class="story__circle">
+    <img
+      class="story__img"
+      [src]="story.account.authorImageUrl"
+      alt="story-img"
+    />
+  </div>
+  <h5 class="story__author">{{ story.account.authorName }}</h5>
+</a>

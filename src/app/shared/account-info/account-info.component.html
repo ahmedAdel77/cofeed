@@ -1,0 +1,10 @@
+<div class="account-info">
+  <div class="account-info__avatar">
+    <img [src]="account?.authorImageUrl || '../../../assets/img/random_users/64.jpg'" alt="avatar" />
+  </div>
+
+  <div class="account-info__body">
+    <h5 class="account-info__title">{{ account?.authorName || "Michael"}}</h5>
+    <small class="account-info__username">{{ account?.authorUserName || "@michaaelco_" }}</small>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="feed">
+  <div class="feed__img"></div>
+  <div class="feed__body">
+    <div class="feed__author">
+      <img class="author__image" [src]="feed.account.authorImageUrl" alt="" />
+      <h5 class="author__name">{{ feed.account.authorName }}</h5>
+    </div>
+    <div class="feed__interactions">
+      <div class="interaction">
+        <i
+          class="interaction__icon fa fa-heart"
+          [ngClass]="{ liked: liked }"
+          aria-hidden="true"
+          (click)="incrementLikes()"
+        ></i>
+        <p class="interaction__number">{{ feed.interactions.likes }}</p>
+      </div>
+
+      <div class="interaction">
+        <i class="interaction__icon fa fa-commenting" aria-hidden="true"></i>
+        <p class="interaction__number">
+          {{ feed.interactions.comments.length }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

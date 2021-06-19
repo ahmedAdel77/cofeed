@@ -1,0 +1,12 @@
+<div class="suggestions">
+  <div class="suggestions__header">
+    <h5 class="suggestions__label">Suggestions For You</h5>
+    <a routerLink="/suggestions" class="suggestions__all">See All</a>
+  </div>
+  <div class="suggestions__body">
+    <app-suggestion
+      *ngFor="let suggestion of suggestions; let i = index"
+      [suggestion]="suggestion"
+    ></app-suggestion>
+  </div>
+</div>

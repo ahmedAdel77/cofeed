@@ -1,0 +1,23 @@
+.account-info {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+
+  .account-info__avatar {
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      margin-right: 15px;
+    }
+  }
+
+  .account-info__title {
+    color: $text-color;
+  }
+
+  .account-info__username {
+    color: $inactive-color;
+  }
+}

@@ -1,0 +1,15 @@
+.app-layout {
+  display: flex;
+  background-color: $background-color;
+
+  .app-layout__nav {
+    background-color: #fff;
+    flex: 1.5;
+  }
+  .app-layout__home {
+    flex: 4;
+  }
+  .app-layout__other {
+    flex: 1.5;
+  }
+}

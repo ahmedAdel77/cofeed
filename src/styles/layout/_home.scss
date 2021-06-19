@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  .home__stories {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .home__separator {
+    width: 90%;
+    height: 1px;
+    background-color: $separator-color-1;
+    margin: auto;
+    // margin-top: 10px;
+    // margin-bottom: 15px;
+  }
+
+  &__feeds {
+  }
+}

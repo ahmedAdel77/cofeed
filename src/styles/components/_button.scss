@@ -1,0 +1,18 @@
+.btn {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 8px 0px;
+  text-align: center;
+  width: 90px;
+  font-size: small;
+  font-weight: normal;
+
+  &--primary {
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &--secondary {
+    border: 1px solid $inactive-color;
+    color: $text-color;
+  }
+}

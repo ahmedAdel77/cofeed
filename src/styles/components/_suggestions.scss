@@ -1,0 +1,32 @@
+.suggestions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__label {
+    color: $text-color;
+    font-size: 15px;
+  }
+
+  &__all {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  &::after {
+    position: absolute;
+    content:"";
+    left: 5%;
+    bottom: -10%;
+    width: 90%;
+    height: 1px;
+    background-color: $separator-color-1;
+  }
+}

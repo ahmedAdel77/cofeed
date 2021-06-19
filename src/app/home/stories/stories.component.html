@@ -1,0 +1,6 @@
+<app-story
+  *ngFor="let story of stories; let i = index"
+  [ngClass]="{ 'story--watched': story.viewed, 'story--self': story.self }"
+  [story]="story"
+  class="story"
+></app-story>

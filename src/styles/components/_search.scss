@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+
+  &__input {
+    border-radius: 50px;
+    border: 2px solid $separator-color-1;
+    padding: 15px 0px;
+    padding-left: 43px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $inactive-color;
+      font-size: 15px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    padding-left: 17px;
+    z-index: 2;
+    color: $inactive-color;
+  }
+}
